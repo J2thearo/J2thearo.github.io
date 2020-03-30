@@ -9,9 +9,9 @@ let b;
 
 function setup() {
   if(windowWidth <= windowHeight){
-    myCanvas = createCanvas(windowWidth, windowWidth);
+    myCanvas = createCanvas(0.85*windowWidth, 0.85*windowWidth);
   } else {
-    myCanvas = createCanvas(windowHeight, windowHeight);
+    myCanvas = createCanvas(0.85*windowHeight, 0.85*windowHeight);
   }
   a = document.getElementsByTagName("ink-var")[0];
   b = document.getElementsByTagName("ink-var")[1];
@@ -31,7 +31,6 @@ function setup() {
   one.uxEvent("hover", setHoverOne);
   two = uxCircle(2*posPoint3[0], posPoint3[1], width*0.025);
   two.uxEvent("hover", setHoverTwo);
-  mouseInsideElement = false;
   noLoop();
 }
 
@@ -160,9 +159,9 @@ function draw() {
 
 function windowResized() {
   if(windowWidth <= windowHeight){
-    resizeCanvas(windowWidth, windowWidth);
+    resizeCanvas(0.85*windowWidth, 0.85*windowWidth);
   } else {
-    resizeCanvas(windowHeight, windowHeight);
+    resizeCanvas(0.85*windowHeight, 0.85*windowHeight);
   }
   posPoint3 = [width/3, height/2+50]
   one.x = posPoint3[0]
