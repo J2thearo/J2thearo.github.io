@@ -152,10 +152,10 @@ function draw() {
     hoverTwo = false;
   }
 
-  let fps = frameRate();
-  fill(255);
-  stroke(0);
-  text("FPS: " + fps.toFixed(0), 100, height - 10);
+  //let fps = frameRate();
+  //fill(255);
+  //stroke(0);
+  //text("FPS: " + fps.toFixed(0), 100, height - 10);
 }
 
 function windowResized() {
